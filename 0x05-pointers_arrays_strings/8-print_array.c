@@ -16,7 +16,12 @@ void print_array(int *a, int n)
 	{
 		if (a[i] == a[n])
 			break;
-		printf("%d, ", a[i]);
+		printf("%d", a[i]);
+
+		if (i == n - 1)
+			continue;
+
+		printf(", ");
 	}
 	printf("\n");
 }
