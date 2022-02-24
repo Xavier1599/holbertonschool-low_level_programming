@@ -9,7 +9,7 @@ int prime(int num, int div);
  * @num: parameter to check
  * @div: parameter to divide
  *
- * Return 0 if not and 1 if is prime
+ * Return: 0 if not and 1 if is prime
  */
 
 int prime(int num, int div)
