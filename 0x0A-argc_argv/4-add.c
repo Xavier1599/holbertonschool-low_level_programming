@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		for (num = 1; num < argc; num++)
 		{
 
-			if (atoi(argv[num]) < 48 || atoi(argv[num]) > 57)
+			if (atoi(argv[num]) == 0 && (argv[num]) == 0)
 			{
 				printf("Error\n");
 				return (1);
