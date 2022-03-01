@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
-	arr = malloc(sizeof(size) * size);
+	arr = malloc(sizeof(c) * size);
 
 	for (idx = 0; idx < size; idx++)
 
