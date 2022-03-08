@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
+ * main - print the name of the file that is complied on
  *
- *
+ * Return: 0
  */
 
 int main(void)
