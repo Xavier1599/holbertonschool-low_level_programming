@@ -17,8 +17,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	if (array == NULL || cmp == NULL)
 	{
+		return (-1);
 
-		for (idx = 1; idx <= size; idx++)
+		for (idx = 0; idx < size; idx++)
 		{
 			cnt = cmp(array[idx]);
 
