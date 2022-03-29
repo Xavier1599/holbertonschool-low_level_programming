@@ -7,7 +7,7 @@
  * Return: 0 if succesful
  */
 
-int main(int argc, char argv)
+int main(int argc, char **argv)
 {
 	int fo_from, fo_to, fr = 1, fw, fc_from, fc_to;
 	char *buffer[1024];
@@ -23,14 +23,14 @@ int main(int argc, char argv)
 	while (fr > 0)
 	{
 		fr = read(fo_from, buffer, 1024);
-		if (fo_from == -1  fr == -1)
+		if (fo_from == -1 || fr == -1)
 		{
 			dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
 
 		fw = write(fo_to, buffer, fr);
-		if (fo_to == -1  fw == -1)
+		if (fo_to == -1 || fw == -1)
 		{
 			dprintf(2, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
