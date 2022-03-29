@@ -25,7 +25,7 @@ int main(int ac, char **av)
 		r = read(o_from, buffer, 1024);
 		if (o_from == -1 || r == -1)
 		{
-			dprintf(2, "Error: Can't read from file %s", av[1]);
+			dprintf(2, "Error: Can't read from file %s\n", av[1]);
 			exit(98);
 		}
 		w = write(o_to, buffer, r);
