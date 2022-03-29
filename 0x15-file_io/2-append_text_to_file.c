@@ -1,8 +1,12 @@
 #include "main.h"
 
 /**
+ * append_text_to_file - append text
  *
+ * @filename: parameter
+ * @text_content: parameter
  *
+ * Return: 1
  */
 
 int append_text_to_file(const char *filename, char *text_content)
@@ -14,7 +18,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		for(len = 0; text_content[len]; len++)
+		for (len = 0; text_content[len]; len++)
 			;
 	}
 
@@ -26,5 +30,5 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	close(o);
 
-	return(1);
+	return (1);
 }
