@@ -17,8 +17,8 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	fo_from = open(argv[1], O_RDONLY, 0644);
-	fo_to = open(argv[2], O_CREAT | O_RDWR | O_TRUNC, 0664);
+	fo_from = open(argv[1], O_RDONLY);
+	fo_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	while (fr > 0)
 	{
