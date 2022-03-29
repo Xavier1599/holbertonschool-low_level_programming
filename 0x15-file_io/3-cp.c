@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 		exit(97);
 	}
 	fo_from = open(argv[1], O_RDONLY, 0444);
-	fo_to = open(argv[2], O_CREAT | O_RDWR | O_TRUNC, 0660);
+	fo_to = open(argv[2], O_CREAT | O_RDWR | O_TRUNC, 0664);
 
 	while (fr > 0)
 	{
